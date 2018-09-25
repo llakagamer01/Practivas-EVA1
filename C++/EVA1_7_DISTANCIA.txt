@@ -1,0 +1,51 @@
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <cstdlib>
+#include <cmath>
+
+using namespace std;
+
+// Headers
+string toString (double);
+int toInt (string);
+double toDouble (string);
+
+int main() {
+    cout << "A continuacion vamos a calcluar la velocidad de un automovil." << endl;
+    cout << "A continuacion vamos a insertar los datos para calcular la velocidad" << endl;
+    double vIni;
+    
+    cout << "Ingrese la velciodad inicial" << endl;
+    cin >> vIni;
+    cout << "Ingrese la velocidad final" << endl;
+    double vFin;
+    
+    cin >> vFin;
+    cout << "Ingrese el tiempo" << endl;
+    double iTem;
+    
+    cin >> iTem;
+    double iDis;
+    
+    iDis = (vIni + vFin) / 2 * iTem;
+    cout << "La Distancia es: ";
+    cout << iDis;
+    cout << "KM/H" << endl;
+    return 0;
+}
+
+// The following implements type conversion functions.
+string toString (double value) { //int also
+    stringstream temp;
+    temp << value;
+    return temp.str();
+}
+
+int toInt (string text) {
+    return atoi(text.c_str());
+}
+
+double toDouble (string text) {
+    return atof(text.c_str());
+}

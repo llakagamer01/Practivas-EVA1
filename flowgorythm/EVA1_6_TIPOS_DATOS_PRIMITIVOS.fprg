@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="temporal2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-09-11 09:48:34 a. m."/>
+        <attribute name="created" value="dGVtcG9yYWwyO0xBQkExMzIwNTY7MjAxOC0wOS0xMTswOTowOTowMiBhLiBtLjsyOTU0"/>
+        <attribute name="edited" value="dGVtcG9yYWwyO0xBQkExMzIwNTY7MjAxOC0wOS0xMTswOTo0ODozNCBhLiBtLjsxOzMwNzA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;A continuacion vamos a determinar tu fecha de nacimiento&quot;" newline="True"/>
+            <output expression="&quot;Introducce tu nombre&quot;" newline="True"/>
+            <declare name="iNom" type="String" array="False" size=""/>
+            <input variable="iNom"/>
+            <output expression="&quot;Intruduce tu edad&quot;" newline="True"/>
+            <declare name="iEdad" type="Integer" array="False" size=""/>
+            <input variable="iEdad"/>
+            <declare name="iNac" type="Integer" array="False" size=""/>
+            <assign variable="iNac" expression="2018-iEdad"/>
+            <output expression="&quot;Tu nombre es &quot;" newline="False"/>
+            <output expression="iNom" newline="True"/>
+            <output expression="&quot;Tu fecha de nacimiento es: &quot;" newline="False"/>
+            <output expression="iNac" newline="False"/>
+        </body>
+    </function>
+</flowgorithm>

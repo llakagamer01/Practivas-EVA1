@@ -1,0 +1,47 @@
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <cstdlib>
+#include <cmath>
+
+using namespace std;
+
+// Headers
+string toString (double);
+int toInt (string);
+double toDouble (string);
+
+int main() {
+    cout << "A continuacion vamos a determinar tu fecha de nacimiento" << endl;
+    cout << "Introducce tu nombre" << endl;
+    string iNom;
+    
+    cin >> iNom;
+    cout << "Intruduce tu edad" << endl;
+    int iEdad;
+    
+    cin >> iEdad;
+    int iNac;
+    
+    iNac = 2018 - iEdad;
+    cout << "Tu nombre es ";
+    cout << iNom << endl;
+    cout << "Tu fecha de nacimiento es: ";
+    cout << iNac;
+    return 0;
+}
+
+// The following implements type conversion functions.
+string toString (double value) { //int also
+    stringstream temp;
+    temp << value;
+    return temp.str();
+}
+
+int toInt (string text) {
+    return atoi(text.c_str());
+}
+
+double toDouble (string text) {
+    return atof(text.c_str());
+}

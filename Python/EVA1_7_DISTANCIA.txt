@@ -1,0 +1,18 @@
+print("A continuacion vamos a calcluar la velocidad de un automovil.")
+print("A continuacion vamos a insertar los datos para calcular la velocidad")
+print("Ingrese la velciodad inicial")
+vIni = float(input())
+print("Ingrese la velocidad final")
+vFin = float(input())
+print("Ingrese el tiempo")
+iTem = float(input())
+iDis = (vIni + vFin) / 2 * iTem
+print("La Distancia es: ", end='', flush=True)
+print(iDis, end='', flush=True)
+print("KM/H")
+
+}
+
+double toDouble (string text) {
+    return atof(text.c_str());
+}

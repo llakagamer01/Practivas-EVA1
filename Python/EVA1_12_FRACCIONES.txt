@@ -1,0 +1,48 @@
+def fracciondesu(fraccion):
+     
+# Main
+print("Introduce numerador")
+anum = float(input())
+print("Introduce denominador")
+aden = float(input())
+print("Introduce otro numerador")
+bnum = float(input())
+print("Introduce otro denominador")
+bden = float(input())
+print(" La suma es ")
+print(anum * bden + aden * bnum, end='', flush=True)
+print(" / ", end='', flush=True)
+print(aden * bden)
+print("La resta es ")
+print(anum * bden - aden * bnum, end='', flush=True)
+print("/", end='', flush=True)
+print(aden * bden, end='', flush=True)
+print("")
+print("La multiplicacion es ")
+print(anum * bnum, end='', flush=True)
+print("/", end='', flush=True)
+print(aden * bden, end='', flush=True)
+print("")
+print(" La divicion es ")
+print(anum * bden, end='', flush=True)
+print("/", end='', flush=True)
+print(aden * bnum, end='', flush=True)
+
+void fracciondesu(int fraccion) {
+    cin >> ;
+}
+
+// The following implements type conversion functions.
+string toString (double value) { //int also
+    stringstream temp;
+    temp << value;
+    return temp.str();
+}
+
+int toInt (string text) {
+    return atoi(text.c_str());
+}
+
+double toDouble (string text) {
+    return atof(text.c_str());
+}

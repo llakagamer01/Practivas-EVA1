@@ -1,0 +1,70 @@
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <cstdlib>
+#include <cmath>
+
+using namespace std;
+
+// Headers
+string toString (double);
+int toInt (string);
+double toDouble (string);
+void fracciondesu(int fraccion);
+
+int main() {
+    cout << "Introduce numerador" << endl;
+    double anum;
+    
+    cin >> anum;
+    cout << "Introduce denominador" << endl;
+    double aden;
+    
+    cin >> aden;
+    cout << "Introduce otro numerador" << endl;
+    double bnum;
+    
+    cin >> bnum;
+    cout << "Introduce otro denominador" << endl;
+    double bden;
+    
+    cin >> bden;
+    cout << " La suma es " << endl;
+    cout << anum * bden + aden * bnum;
+    cout << " / ";
+    cout << aden * bden << endl;
+    cout << "La resta es " << endl;
+    cout << anum * bden - aden * bnum;
+    cout << "/";
+    cout << aden * bden;
+    cout << "" << endl;
+    cout << "La multiplicacion es " << endl;
+    cout << anum * bnum;
+    cout << "/";
+    cout << aden * bden;
+    cout << "" << endl;
+    cout << " La divicion es " << endl;
+    cout << anum * bden;
+    cout << "/";
+    cout << aden * bnum;
+    return 0;
+}
+
+void fracciondesu(int fraccion) {
+    cin >> ;
+}
+
+// The following implements type conversion functions.
+string toString (double value) { //int also
+    stringstream temp;
+    temp << value;
+    return temp.str();
+}
+
+int toInt (string text) {
+    return atoi(text.c_str());
+}
+
+double toDouble (string text) {
+    return atof(text.c_str());
+}

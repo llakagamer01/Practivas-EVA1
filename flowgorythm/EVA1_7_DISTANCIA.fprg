@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="invitado2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-09-12 09:50:27 a. m."/>
+        <attribute name="created" value="aW52aXRhZG8yO0xBQkExMzIwNTI7MjAxOC0wOS0xMjswOToxNTowNSBhLiBtLjsyOTQ1"/>
+        <attribute name="edited" value="aW52aXRhZG8yO0xBQkExMzIwNTI7MjAxOC0wOS0xMjswOTo1MDoyNyBhLiBtLjsxOzMwNTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;A continuacion vamos a calcluar la velocidad de un automovil.&quot;" newline="True"/>
+            <output expression="&quot;A continuacion vamos a insertar los datos para calcular la velocidad&quot;" newline="True"/>
+            <declare name="vIni" type="Real" array="False" size=""/>
+            <output expression="&quot;Ingrese la velciodad inicial&quot;" newline="True"/>
+            <input variable="vIni"/>
+            <output expression="&quot;Ingrese la velocidad final&quot;" newline="True"/>
+            <declare name="vFin" type="Real" array="False" size=""/>
+            <input variable="vFin"/>
+            <output expression="&quot;Ingrese el tiempo&quot;" newline="True"/>
+            <declare name="iTem" type="Real" array="False" size=""/>
+            <input variable="iTem"/>
+            <declare name="iDis" type="Real" array="False" size=""/>
+            <assign variable="iDis" expression="(((vIni+vFin)/2)*iTem)"/>
+            <output expression="&quot;La Distancia es: &quot;" newline="False"/>
+            <output expression="iDis" newline="False"/>
+            <output expression="&quot;KM/H&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,10 @@
+print("A continuacion vamos a determinar tu fecha de nacimiento")
+print("Introducce tu nombre")
+iNom = input()
+print("Intruduce tu edad")
+iEdad = int(input())
+iNac = 2018 - iEdad
+print("Tu nombre es ", end='', flush=True)
+print(iNom)
+print("Tu fecha de nacimiento es: ", end='', flush=True)
+print(iNac, end='', flush=True)
